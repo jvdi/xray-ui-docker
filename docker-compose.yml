@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  xray-ui:
+    image: javidi/xray-ui
+    container_name: xray-ui
+    volumes:
+      - $PWD/db/:/etc/xray-ui/
+      - $PWD/cert/:/root/cert/
+    restart: unless-stopped
+    network_mode: host
