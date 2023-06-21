@@ -1,13 +1,13 @@
 version: "3.9"
 services:
-  xui:
+  xray-ui:
     build:
       context: .
       dockerfile: Dockerfile
-    image: enwaiax/x-ui
-    container_name: xui
+    image: javidi/xray-ui
+    container_name: xray-ui
     restart: unless-stopped
     network_mode: host
     volumes:
-      - $PWD/db/:/etc/x-ui/
+      - $PWD/db/:/etc/xray-ui/
       - $PWD/cert/:/root/cert/
