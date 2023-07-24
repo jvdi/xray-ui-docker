@@ -54,6 +54,21 @@ wget https://raw.githubusercontent.com/jvdi/xray-ui-docker/main/docker-compose.y
 docker compose up -d
 ```
 
+### How to build docker image for deployment from Dockerfile
+Clone Dockefile, run
+```
+docker build -t xray-ui .
+# Run container for commit
+docker run -itd --name xray-ui xray-ui
+# Commit container
+docker commit xray-ui xray-ui:latest
+# Loging to docker hub
+docker login
+# Replace your information for push container
+docker tag xray-ui:latest javidi/xray-ui:latest
+docker push javidi/xray-ui:latest
+```
+
 #### How to enable SSL to your Xray-UI Panel
 
 This part describe how to enable SSL.
