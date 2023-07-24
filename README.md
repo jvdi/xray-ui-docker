@@ -6,7 +6,7 @@ Supported Architecture :
 
 |                      Script                                      | Tag    | amd64 |
 | ---------------------------------------------------------- | ------ | ----- |
-| [jvdi/Xray-ui](https://github.com/jvidi/xray-ui)              | latest | ✅    |
+| [jvdi/xray-ui](https://github.com/jvidi/xray-ui)              | latest | ✅    |
 
 ### Why Should You Use Docker
 
